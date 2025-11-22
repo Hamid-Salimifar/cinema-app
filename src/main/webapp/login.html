@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        .login-container {
+            background-color: white;
+            margin: 10px 10%;
+            padding: 20px;
+
+        }
+        .login-container h2{
+            font-size: x-large;
+            cursor: default;
+        }
+        .login-container input[type=text]{
+            border-radius: 5px;
+            width: 100%;
+
+            border: 1px solid #cfcfcf;
+            padding: 8px;
+            margin-bottom: 10px;
+
+            outline: none;
+        }
+        .login-container input[type=submit]{
+            background-color: rgb(30, 105, 255);
+            margin-top: 10px;
+            color: white;
+            border-radius: 6px;
+            padding: 3px 3px;
+            width: 60px;  height: 40px;
+            border: none;
+            cursor: pointer;
+            font-size: larger;
+        }
+        .login-container input[type=submit]:hover{
+            background-color: #0a53be;
+            transition: 0.5s;
+        }
+    
+        #fp{
+            margin-top: 10px;
+            color:dodgerblue;
+            display: inline-block;
+            text-decoration: none;
+        }
+        #fp:hover{
+            text-decoration: underline;
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="login" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" id="username"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="text" name="password" id="password"><br>
+
+
+        <input type="submit" value="login" id="login"><br>
+
+
+    </form>
+    <a id="fp" href="forgot-password">forgot password</a>
+
+</div>
+
+</body>
+</html>
